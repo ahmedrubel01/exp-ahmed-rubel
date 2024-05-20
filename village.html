@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome to my new template</title>
+</head>
+<body>
+    <center><h1>আমার গ্রাম</h1></center>
+    <center><p>এইটা <b><span id="status">আমার বাড়ি</span></b></p></center>
+    <img src="village.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="home" title="home"onmousemove="update('আমার বাড়ি')"
+     coords="694,201,663,265" shape="rect">
+
+    <area target="" alt="river" title="river" onmousemove="update('ইছামতি নদী')"
+     coords="508,8,507,43,501,101,506,128,
+    480,191,467,215,451,260,440,280,348,401,292,443,228,447,176,444,137,453,109,469,85,513,
+    76,529,36,531,63,479,93,442,134,425,186,414,223,415,276,418,316,385,398,292,442,203,462,
+    138,472,76,463,32,462,3" shape="poly">
+
+    <area target="" alt="pond" title="pond" onmousemove="update('পুকুর')" coords="927,37,22" shape="circle">
+
+    <area target="" alt="My uncle's house" title="My uncle's house" onmousemove="update('আমার কাকার বাড়ি')" 
+    coords="785,363,821,404" shape="rect">
+
+    <area target="" alt="My land" title="My land" onmousemove="update('আমার জমি')"
+     coords="849,69,895,107" shape="rect">
+
+    <area target="" alt="street" title="street"  onmousemove="update('রাস্তা ')" coords="510,520,521,490,535,441,547,
+    404,558,371,575,342,593,315,604,298,623,262,664,265,695,260,724,254,784,236,856,212,923,
+    195,959,181,1027,151,1065,182,1102,217,1125,243,1137,271,1079,297,1009,322,778,419,671,
+    476,617,523,625,525,679,481,782,429,1015,334,1086,308,1152,283,1221,255,1297,211,1341,
+    183,1355,165,1348,157,1318,182,1286,201,1234,228,1158,259,1135,236,1119,210,1080,168,
+    1031,135,951,165,915,181,853,199,780,225,721,241,695,250,663,250,625,248,637,212,639,
+    174,643,140,641,92,640,59,627,60,629,95,628,140,627,172,621,209,609,248,592,288,581,
+    311,562,334,544,364,531,396,523,438,507,483,496,517" shape="poly">
+
+    <area target="" alt="খাল" title="খাল" onmousemove="update('খাল ')" coords="346,412,506,
+    437,537,348,556,288,574,212,586,137,622,136,624,104,634,101,633,153,589,159,584,210,569,
+    283,557,328,556,353,
+    524,434,512,480,309,449" shape="poly">
+    <area target="" alt="সেতু" title="সেতু" onmousemove="update('সেতু ')"coords="614,87,632,102" shape="rect">
+    <area target="" alt="মসজিদ" title="মসজিদ" onmousemove="update('মসজিদ ')" coords="552,376,571,399" shape="rect">
+</map>
+
+<script>
+    const status = document.getElementById("status")
+    function update(message){
+    status.innerHTML = message
+    }
+</script>
+</body>
+</html>
